@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Mission Planning</title>
+</head>
+<body>
+
+    <h1>New task</h1>
+
+    <h3>TASK OUTLINE</h3>
+
+
+    {% if form.errors %}
+
+    <p style="color:red;">Por favor revisa este campo</p>
+
+    {% endif %}
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        <table>
+
+        {{form.as_table}}
+
+        </table>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    </body>
+</html>
+
+    <!-- This is a comment <h3>INITIALIZATION</h3>
+
+      <h5>CLI commands</h5> ––>
+
+
