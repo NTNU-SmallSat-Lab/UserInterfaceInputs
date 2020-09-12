@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from UI import views
+from UI import views    # Import views.py
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('formulario/', views.postmission),
+    path('admin/', admin.site.urls),    # Panel administration page
+    path('', views.postmission),        # Mission planning form, page by default
 ]
