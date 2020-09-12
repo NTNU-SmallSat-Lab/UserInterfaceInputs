@@ -1,7 +1,6 @@
-from django.http import HttpResponse
-from django.shortcuts import render
-from django.template import Template, Context
-from django.template import loader
+# As many view functions as different pages/urls the webpage has.
+
+from django.shortcuts import render # Import the required libraries
 from UI.forms import MissionForm
 
 
@@ -20,4 +19,4 @@ def postmission(request):
 
    else: miFormulario=MissionForm()
 
-   return render(request, "missionplanning.html", {"form":miFormulario})
+   return render(request, "missionplanning.html", {"form":miFormulario})   #Rendering the request using the html template from the next listing
