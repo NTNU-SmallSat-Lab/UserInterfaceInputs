@@ -3,5 +3,5 @@ from UIapp.models import template
 
 # Register your models here.
 
-admin.site.register(template)
+admin.site.register(template)   # Registration in the administration panel
 
